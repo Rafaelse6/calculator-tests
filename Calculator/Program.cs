@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Calculator.Services;
+
+CalculatorImp c = new CalculatorImp();
+
+int num1 = 5;
+int num2 = 10;
+
+Console.WriteLine($"{num1} + {num2} = {c.Sum(num1, num2)}");
