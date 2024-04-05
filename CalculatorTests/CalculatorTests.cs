@@ -55,20 +55,13 @@ public class CalculatorTests
     }
 
     [Theory]
-    [InlineData(2)]
-    [InlineData(4)]
-    [InlineData(6)]
-    [InlineData(8)]
-    [InlineData(10)]
-    public void ShouldCheckIfNumbersAreEvenAndReturnTrue(int num)
+    [InlineData(new int[] { 2, 4 })]
+    [InlineData(new int[] { 6, 8, 10 })]
+    public void ShouldCheckIfNumbersAreEvenAndReturnTrue(int[] nums)
     {
 
-        //Act
-        bool result = _calc.ItsEven(num);
-
-        //Assert
-        Assert.True(result);
-
+        //Act  /Assert
+        Assert.All(nums, num => Assert.True(_calc.ItsEven(num)));
     }
 
 }
