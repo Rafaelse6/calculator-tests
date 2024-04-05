@@ -56,6 +56,21 @@ public class CalculatorTests
     }
 
     [Fact]
+    public void ShouldMultiply5And10AndReturn50()
+    {
+        //Arrange
+        int num1 = 5;
+        int num2 = 10;
+
+        //Act
+        int result = _calc.Mult(num1, num2);
+
+        //Assert
+        Assert.Equal(50, result);
+    }
+
+
+    [Fact]
     public void ShouldCheckIf4IsEvenAndReturnTrue()
     {
         //Arrange
