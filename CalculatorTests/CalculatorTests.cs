@@ -69,6 +69,21 @@ public class CalculatorTests
         Assert.Equal(50, result);
     }
 
+    [Fact]
+    public void ShouldDivide10And5AndReturn2()
+    {
+
+        //Arrange
+        int num1 = 10;
+        int num2 = 5;
+
+        //Act
+        int result = _calc.Div(num1, num2);
+
+        //Assert
+        Assert.Equal(2, result);
+    }
+
 
     [Fact]
     public void ShouldCheckIf4IsEvenAndReturnTrue()
