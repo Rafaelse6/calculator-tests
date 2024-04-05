@@ -40,4 +40,17 @@ public class CalculatorTests
         //Assert
         Assert.Equal(20, result);
     }
+
+    [Fact]
+    public void ShouldCheckIf4IsEvenAndReturnTrue()
+    {
+        //Arrange
+        int num = 4;
+
+        // Act
+        bool result = _calc.ItsEven(num);
+
+        // Assert
+        Assert.True(result);
+    }
 }
