@@ -42,6 +42,20 @@ public class CalculatorTests
     }
 
     [Fact]
+    public void ShouldSubtract10And5AndReturn5()
+    {
+        //Arrange
+        int num1 = 10;
+        int num2 = 5;
+
+        //Act
+        int result = _calc.Sub(num1, num2);
+
+        //Assert
+        Assert.Equal(5, result);
+    }
+
+    [Fact]
     public void ShouldCheckIf4IsEvenAndReturnTrue()
     {
         //Arrange
