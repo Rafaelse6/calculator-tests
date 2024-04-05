@@ -53,4 +53,22 @@ public class CalculatorTests
         // Assert
         Assert.True(result);
     }
+
+    [Theory]
+    [InlineData(2)]
+    [InlineData(4)]
+    [InlineData(6)]
+    [InlineData(8)]
+    [InlineData(10)]
+    public void ShouldCheckIfNumbersAreEvenAndReturnTrue(int num)
+    {
+
+        //Act
+        bool result = _calc.ItsEven(num);
+
+        //Assert
+        Assert.True(result);
+
+    }
+
 }
