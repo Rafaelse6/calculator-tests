@@ -1,7 +1,7 @@
 namespace Calculator.Services
 {
 
-    public class ValidateString
+    public class StringValidation
     {
         public int CountCaracters(string text)
         {
@@ -9,4 +9,5 @@ namespace Calculator.Services
             return num;
         }
     }
+
 }

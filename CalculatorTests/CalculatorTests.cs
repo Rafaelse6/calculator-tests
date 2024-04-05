@@ -25,4 +25,19 @@ public class CalculatorTests
         //Assert
         Assert.Equal(15, result);
     }
+
+    [Fact]
+    public void ShouldSum10And10AndReturn20()
+    {
+
+        //Arrange
+        int num1 = 10;
+        int num2 = 10;
+
+        //Act
+        int result = _calc.Sum(num1, num2);
+
+        //Assert
+        Assert.Equal(20, result);
+    }
 }
